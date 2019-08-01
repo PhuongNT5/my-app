@@ -1,0 +1,43 @@
+.summary {
+    background-image: url('assets/images/bg-summary.jpg');
+    background-size: cover;
+    height: 80vh;
+  h2 {
+    color: #fff;
+    padding-top: 70px;
+  }
+  svg {
+    color: #aeb1be;
+    float: left;
+  }
+  .svg-inline--fa {
+    height: 40px;
+    width: 40px;
+  }
+  .mysummary-content{
+    text-align: center;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-name: slideInLeft;
+    p{
+      color: #fff;
+      font-size: 24px;
+    }
+    .author {
+      float: left;
+      display: flex;
+      padding: 5% 10%;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+      }
+    }
+    .info p {
+      font-size: 18px;
+      margin-bottom: 0;
+      margin-left: 20px;
+      text-align: left;
+    }
+  }
+}

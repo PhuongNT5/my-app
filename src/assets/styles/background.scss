@@ -1,0 +1,67 @@
+.my-background {
+  .carousel {
+    flex-direction: row;
+    margin-left: -1px;
+    margin-right: -1px;
+    transform: translateY(-100px);
+    margin-bottom: -100px;
+    .carousel-inner {
+      .carousel-item {
+        .col-sm {
+          height: 250px;
+          background: #3c3c3c;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          margin: 0 2px;
+          justify-content: center;
+          .background {
+            max-width: 300px;
+          }
+          img {
+            width: 40px;
+            margin: auto;
+          }
+          h4 {
+            margin-top: 10px;
+            font-size: 30px;
+          }
+          &:hover {
+            background-color: #686157;
+          }
+        }
+      }
+    }
+  }
+
+  .why-me-reason {
+    padding: 50px 0;
+    .title {
+      &:before{
+        position: absolute;
+        content: '';
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        height: 2px;
+        background: #686157;
+        left: 0;
+        transform: translateX(0);
+      }
+      h2 {
+        margin-top: 40px;
+        font-size: 48px;
+        text-align: left;
+        font-weight: bold;
+        span{
+          color: #766157;
+        }
+      }
+    }
+    .detail {
+      color: rgb(106, 118, 128);
+      margin-top: 40px;
+    }
+  }
+  }

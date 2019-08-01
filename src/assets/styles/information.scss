@@ -1,0 +1,45 @@
+.my-information {
+  .information {
+    padding: 70px 0;
+  }
+  .information-content {
+    text-align: left;
+    padding-left: 75px;
+  }
+  .number-experience{
+    background-image: url('assets/images/apple-desktop.jpg');
+    height: 400px;
+    background-size: cover;
+    visibility: visible;
+    animation-name: slideInDown;
+  }
+  .svg-box-content img {
+    width: 90%;
+    height: 93%;
+    padding-top: 5%;
+  }
+  .title {
+    font-size: 23px;
+    margin:20px 0;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-name: slideInDown;
+  }
+  h2, p {
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-name: slideInDown;
+  }
+  .btn-readmore {
+    border: 1px solid #686157;
+    /* background-color: #686157; */
+    color: #686157;
+    padding: 8px 30px;
+    margin-top: 30px;
+  }
+  .btn-readmore:hover {
+    color: #f8f9fa;
+    background-color: #686157;
+    border-color: #686157;
+  }
+}

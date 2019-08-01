@@ -1,0 +1,93 @@
+.my-contact {
+  .contact-form {
+    padding: 120px 60px 0;
+    h2 {
+      position: relative;
+      padding-bottom: 15px;
+      &:after {
+        content: '';
+        position: absolute;
+        left: calc(50% - 92px);
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 50px;
+        border-top: 2px solid #333;
+      }
+    }
+
+    .social {
+      .social-info {
+        display: flex;
+        .box-icon {
+          svg {
+            color: #fff;
+          }
+          width: 65px;
+          height: 65px;
+          border-radius: 100%;
+          background: #151515;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .info {
+          margin: auto 10px;
+          text-align: left;
+          p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    form {
+      margin-top: 80px;
+      .form-group {
+        .form-control {
+          border-radius: 0;
+          height: calc(1.5em + .75rem + 6px);
+          &:focus {
+            box-shadow: none;
+            outline-color: none;
+          }
+        }
+        textarea {
+          min-height: 150px;
+        }
+        .error {
+          font-size: 14px;
+          color: #ff2828;
+        }
+      }
+      .btn-submit {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        background: #3c3c3c;
+        border-color: #3c3c3c;
+        border-radius: 0;
+        padding: 11px 37px;
+        margin-top: 60px;
+      }
+    }
+  }
+  .signature {
+    padding: 70px 0;
+    margin-top: 80px;
+    background: #f1f1f1;
+    h4 {
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 0px;
+      font-weight: 600;
+    }
+    .list-social {
+      svg {
+        margin: 10px 10px 20px;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

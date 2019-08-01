@@ -1,0 +1,52 @@
+.home-banner {
+  h1 {
+      font-size: 60px;
+      margin: 30px 0;
+      color: #333;
+      font-family: "Playfair Display", "Times New Roman", Times, serif;
+    }
+  
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      opacity: 1;
+    }
+  
+    .carousel-item img {
+      height: 100vh;
+    }
+  
+    .carousel-item {
+      background-image: url('assets/images/background/man.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 90vh;
+    }
+  
+    .carousel-caption {
+      left: 0;
+      right: 0;
+      text-align: right;
+      top: 30%;
+      height: 40%;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .btn-view-more {
+      padding: 10px 35px;
+      margin-top: 50px;
+      background-color: #686157;
+      color: #fff;
+    }
+  
+    .intro {
+      width: 50%;
+      color: #333;
+      float: right;
+    }
+    .svg-inline--fa.fa-w-14 {
+      height: 40px;
+      width: 40px;
+    }
+}
