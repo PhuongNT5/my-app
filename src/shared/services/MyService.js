@@ -1,19 +1,14 @@
 import * as http from "http";
+import axios from 'axios';
 export default {
   sendEmail(content) {
-    http.request({
-      url: "localhost:3000/api/user/sendEmail",
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      content: JSON.stringify({
-        name: content.name,
-        email: content.email,
-        message: content.message
-      })
-    }).then(response => {
-      var result = response.content.toJSON();
-    }, error => {
-      console.error(error);
+    axios.post('http://192.168.1.173:3000/api/user/receiveEmail', content)
+    .then(response => {
+      console.log(response);
+    })
+    .catch(function (error) {
+      debugger;
+      console.log(error);
     });
   }
 }

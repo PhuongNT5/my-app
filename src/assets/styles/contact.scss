@@ -1,6 +1,9 @@
 .my-contact {
   .contact-form {
     padding: 120px 60px 0;
+    @media (max-width: 991px) {
+      padding: 100px 20px 0;
+    }
     h2 {
       position: relative;
       padding-bottom: 15px;
@@ -29,10 +32,16 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @media (max-width: 991px) {
+            margin-bottom: 30px;
+          }
         }
         .info {
           margin: auto 10px;
           text-align: left;
+          @media (max-width: 991px) {
+            margin: 10px;
+          }
           p {
             margin: 0;
             font-size: 14px;

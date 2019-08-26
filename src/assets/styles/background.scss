@@ -3,8 +3,9 @@
     flex-direction: row;
     margin-left: -1px;
     margin-right: -1px;
-    transform: translateY(-100px);
-    margin-bottom: -100px;
+    // transform: translateY(-100px);
+    // margin-bottom: -100px;
+    z-index: 9;
     .carousel-inner {
       .carousel-item {
         .col-sm {
@@ -28,6 +29,12 @@
           }
           &:hover {
             background-color: #686157;
+          }
+          @media (max-width: 991px) {
+            height: 200px;
+            h4 {
+              font-size: 20px;
+            }
           }
         }
       }

@@ -8,15 +8,17 @@
   }
   .number-experience{
     background-image: url('assets/images/apple-desktop.jpg');
-    height: 400px;
     background-size: cover;
     visibility: visible;
     animation-name: slideInDown;
   }
   .svg-box-content img {
     width: 90%;
-    height: 93%;
-    padding-top: 5%;
+    height: auto;
+    padding: 5%;
+    @media (max-width: 991px) {
+      padding: 15px;
+    }
   }
   .title {
     font-size: 23px;

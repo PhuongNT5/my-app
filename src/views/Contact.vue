@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <form @submit="checkForm" action="/something" method="post" novalidate="true">
+        <form @submit="checkForm" novalidate="true">
           <div class="form-row">
             <div class="form-group col-md-6">
               <input type="text" class="form-control" id="name" v-model="name" placeholder="Name">
@@ -72,6 +72,7 @@
 </template>
 <script>
 import MyService from '@/shared/services/UserService.js';
+import axios from 'axios';
 import { constants } from 'fs';
   export default {
     name: 'Contact',
@@ -96,7 +97,17 @@ import { constants } from 'fs';
             email: this.email,
             message: this.message
           }
-          MyService.sendMail(content);
+          axios.post('http://192.168.1.173:3000/api/user/receiveEmail', content)
+          .then(response => {
+            console.log(response);
+              this.errors = [];
+              this.name = null;
+              this.email = null;
+              this.message = '';
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
         }else {
           console.log(this.errors)
         }
@@ -104,7 +115,7 @@ import { constants } from 'fs';
       },
       validEmail:function(email) {
         var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-      return re.test(email);
+        return re.test(email);
       }
     }
   }

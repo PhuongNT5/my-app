@@ -18,14 +18,15 @@
   width: 100%;
   padding: 20px 15px;
 }
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav a{
   padding-left: 20px;
   padding-right: 20px;
   text-transform: uppercase;
   color: #333;
   font-weight: bold;
   font-size: 15px;
-  &.active {
+  text-decoration: none;
+  &.active, &.router-link-exact-active {
     color: #af8855;
   }
 }
